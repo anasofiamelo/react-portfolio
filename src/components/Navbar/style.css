@@ -1,0 +1,7 @@
+.nav-container {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-around;
+  padding: 2rem 0;
+  /* background: red; */
+}

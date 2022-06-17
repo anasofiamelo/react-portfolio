@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Intro, What, Who, Work, PageComponent } from "../../pages";
+import { PageComponent } from "../../pages";
 import { NavbarItem } from "../index";
 import "./style.css";
 
@@ -8,34 +8,25 @@ function Navbar() {
     <PageComponent title="Intro" />
   );
 
+  function renderComponent(componentTitle, children) {
+    return () => {
+      setComponentSelected(
+        <PageComponent title={componentTitle}> {children} </PageComponent>
+      );
+    };
+  }
+
   return (
     <div>
       <nav className="navbar">
         <ul className="nav-container">
           <NavbarItem
             linkContent="Intro"
-            execution={() =>
-              setComponentSelected(<PageComponent title="Intro" />)
-            }
+            execution={renderComponent("Intro")}
           />
-          <NavbarItem
-            linkContent="What"
-            execution={() =>
-              setComponentSelected(<PageComponent title="What" />)
-            }
-          />
-          <NavbarItem
-            linkContent="Who"
-            execution={() =>
-              setComponentSelected(<PageComponent title="Who" />)
-            }
-          />
-          <NavbarItem
-            linkContent="Work"
-            execution={() =>
-              setComponentSelected(<PageComponent title="Work" />)
-            }
-          />
+          <NavbarItem linkContent="What" execution={renderComponent("What")} />
+          <NavbarItem linkContent="Who" execution={renderComponent("Who")} />
+          <NavbarItem linkContent="Work" execution={renderComponent("Work")} />
         </ul>
       </nav>
       <div className="container">{componentSelected}</div>

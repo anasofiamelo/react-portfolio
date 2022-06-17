@@ -1,7 +1,30 @@
+import { useState, useRef, useEffect } from "react";
+import "./style.css";
 function NavbarItem({ className, linkContent, execution }) {
+  const [cursorX, setCursorX] = useState();
+  const [cursorY, setCursorY] = useState();
+
+  const navItemRef = useRef(null);
+  function moveCursorOnNavLinkHover() {
+    const myFunction = (e) => {
+      setCursorX(e.pageX);
+      setCursorY(e.pageY);
+    };
+    if (navItemRef && navItemRef.current) {
+      navItemRef.current.addEventListener("mousemove", myFunction);
+    }
+  }
+  useEffect(() => {
+    moveCursorOnNavLinkHover();
+  }, [navItemRef]);
+
   return (
-    <li className={`nav-item ${className}`}>
-      <a href={`#${className}`} className="nav-link" onClick={execution}>
+    <li ref={navItemRef} className={`nav-item ${className}`}>
+      <div
+        className="cursor"
+        style={{ left: cursorX + "px", top: cursorY + "px" }}
+      />
+      <a href={`#${linkContent}`} className="nav-link" onClick={execution}>
         {linkContent}
       </a>
     </li>

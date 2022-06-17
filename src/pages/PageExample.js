@@ -1,13 +1,12 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 function PageComponent({ children, title }) {
-  useEffect(() => {
-    <PageComponent />;
-    console.log("oi");
-  }, []);
   return (
-    <div className="component">
-      <h1 className="component-title">{title}</h1>
+    <div key={title} className="component">
+      <div className="container">
+        <h1 className="component-title">{title}</h1>
+        <div className="title-border" />
+      </div>
       {children}
     </div>
   );

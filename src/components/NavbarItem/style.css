@@ -1,0 +1,17 @@
+.cursor {
+  visibility: hidden;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--white);
+  position: fixed;
+  pointer-events: none;
+  transition: 0.5s;
+  mix-blend-mode: difference;
+}
+
+.nav-item:hover .cursor {
+  visibility: visible;
+  transform: scale(5);
+  cursor: none;
+}
