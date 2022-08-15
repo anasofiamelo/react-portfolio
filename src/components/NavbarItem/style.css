@@ -12,6 +12,6 @@
 
 .nav-item:hover .cursor {
   visibility: visible;
-  transform: scale(5);
+  transform: scale(7);
   cursor: none;
 }

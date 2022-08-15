@@ -1,35 +1,22 @@
-import { useState } from "react";
-import { PageComponent } from "../../pages";
+import { Who, Work } from "../../pages";
 import { NavbarItem } from "../index";
 import "./style.css";
 
-function Navbar() {
-  const [componentSelected, setComponentSelected] = useState(
-    <PageComponent title="Intro" />
-  );
-
-  function renderComponent(componentTitle, children) {
-    return () => {
-      setComponentSelected(
-        <PageComponent title={componentTitle}> {children} </PageComponent>
-      );
-    };
-  }
-
+function Navbar(props) {
   return (
     <div>
-      <nav className="navbar">
+      <nav>
         <ul className="nav-container">
           <NavbarItem
-            linkContent="Intro"
-            execution={renderComponent("Intro")}
+            linkContent="Who"
+            execution={() => props.onChangeComponent(<Who />)}
           />
-          <NavbarItem linkContent="What" execution={renderComponent("What")} />
-          <NavbarItem linkContent="Who" execution={renderComponent("Who")} />
-          <NavbarItem linkContent="Work" execution={renderComponent("Work")} />
+          <NavbarItem
+            linkContent="Work"
+            execution={() => props.onChangeComponent(<Work />)}
+          />
         </ul>
       </nav>
-      <div className="container">{componentSelected}</div>
     </div>
   );
 }

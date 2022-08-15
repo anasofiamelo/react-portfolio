@@ -1,13 +1,11 @@
-// import { useEffect } from "react";
-
 function PageComponent({ children, title }) {
   return (
-    <div key={title} className="component">
-      <div className="container">
+    <div className="container">
+      <div key={title} className="component">
         <h1 className="component-title">{title}</h1>
         <div className="title-border" />
+        <div className="children">{children}</div>
       </div>
-      {children}
     </div>
   );
 }

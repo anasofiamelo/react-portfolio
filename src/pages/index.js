@@ -1,7 +1,6 @@
 import Intro from "./Intro";
-import What from "./What";
 import Who from "./Who";
 import Work from "./Work";
-import PageComponent from "./PageExample";
+import PageComponent from "./PageComponent";
 
-export { Intro, What, Who, Work, PageComponent };
+export { Intro, Who, Work, PageComponent };

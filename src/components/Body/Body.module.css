@@ -1,0 +1,32 @@
+.body_container {
+  min-height: 100vh;
+}
+.actions_container {
+  position: fixed;
+  height: 100vh;
+}
+.actions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 86.5%;
+  padding: 0 2rem;
+  animation: rolling 1.7s linear 1;
+}
+.actions * {
+  margin-bottom: 2rem;
+}
+@keyframes rolling {
+  0% {
+    top: -10%;
+  }
+  70% {
+    top: 90%;
+  }
+  80% {
+    top: 85%;
+  }
+  90% {
+    top: 87%;
+  }
+}
