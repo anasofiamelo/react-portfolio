@@ -14,11 +14,18 @@ body {
   background: var(--black);
 }
 
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: var(--white);
   font-family: var(--anek);
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 ul {
@@ -63,11 +70,10 @@ ul {
 }
 
 .projects_container {
-  width: 60%;
-  background-color: #8980f5;
+  width: 50%;
   display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 5rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
 @keyframes componentTitle {

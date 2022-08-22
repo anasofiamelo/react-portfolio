@@ -1,8 +1,17 @@
 .project_container {
   background-color: #222;
+  /* width: 80%; */
   padding: 2rem 1rem;
-  /* width: 70%; */
 }
 
 .project_description {
+  /* background-color: aliceblue; */
+}
+
+.project_code_link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  font-style: italic;
 }

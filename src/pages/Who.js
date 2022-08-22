@@ -2,7 +2,7 @@ import PageComponent from "./PageComponent";
 function Who() {
   return (
     <>
-      <PageComponent title="Who">
+      <PageComponent title="Intro">
         <div className="text-container">
           <p className="text">
             Hello! My name is Sofia and I'm a 22 yo. web developer based in

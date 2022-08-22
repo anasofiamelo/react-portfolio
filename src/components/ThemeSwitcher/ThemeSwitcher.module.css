@@ -1,0 +1,20 @@
+.theme_switcher_container {
+  position: absolute;
+  right: 0;
+}
+
+.icon_button {
+  margin: 1rem;
+  z-index: 1000;
+}
+
+.activated {
+  background-color: aliceblue;
+}
+
+.icon {
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: #333;
+  color: white;
+}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navbar, Footer } from "../index";
+import { Navbar, Footer, ThemeSwitcher } from "../index";
 import classes from "./Body.module.css";
 
 import { BsGithub, BsLinkedin } from "react-icons/bs";
@@ -31,6 +31,7 @@ const Body = (props) => {
       </div>
       <div className={classes.body_container}>
         <Navbar onChangeComponent={changeComponentHandler} />
+        <ThemeSwitcher />
         <div className="container">{componentSelected}</div>
       </div>
       <Footer />
