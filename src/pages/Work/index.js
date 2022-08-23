@@ -1,11 +1,12 @@
-import PROJECTS from "../PROJECTS";
+import classes from "./Work.module.css";
 
-import { PageComponent, Project } from "../components";
+import PROJECTS from "../../PROJECTS";
+import { PageComponent, Project } from "../../components";
 
 function Work() {
   return (
     <PageComponent title="Work">
-      <div className="projects_container">
+      <div className={classes.projects_container}>
         {PROJECTS.map((project) => {
           return <Project {...project} />;
         })}
