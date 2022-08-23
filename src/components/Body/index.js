@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { Navbar, Footer, ThemeSwitcher } from "../index";
+import { Navbar, Footer } from "../index";
+import { ThemeSwitcher } from "../UI";
+import { Who } from "../../pages";
 import classes from "./Body.module.css";
 
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Body = (props) => {
-  const [componentSelected, setComponentSelected] = useState();
+  const [componentSelected, setComponentSelected] = useState(<Who />);
 
   const changeComponentHandler = (component) => {
     setComponentSelected(component);

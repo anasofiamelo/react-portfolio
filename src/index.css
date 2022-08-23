@@ -1,7 +1,7 @@
 html {
   --light-blue: #c6ddf0;
   --light-coral: #c99da3;
-  --pink: #8980f5;
+  --purple: #8980f5;
   --black: #2a2b2a;
   --white: #f7f7f9;
   --anek: "Anek Malayalam";
@@ -43,7 +43,7 @@ ul {
 
 .component-title {
   position: relative;
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-family: var(--anek);
   color: var(--white);
   text-transform: uppercase;

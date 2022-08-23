@@ -1,6 +1,6 @@
-import PageComponent from "./PageComponent";
-import { Project } from "../components";
 import PROJECTS from "../PROJECTS";
+
+import { PageComponent, Project } from "../components";
 
 function Work() {
   return (

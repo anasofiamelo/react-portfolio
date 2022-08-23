@@ -1,4 +1,4 @@
-import PageComponent from "./PageComponent";
+import { PageComponent } from "../components";
 function Who() {
   return (
     <>

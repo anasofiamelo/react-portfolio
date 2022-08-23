@@ -1,0 +1,18 @@
+.input {
+  border: none;
+  background-color: #222;
+  color: var(--white);
+  font-size: 1.1rem;
+  width: 13rem;
+  height: 3rem;
+  font-family: var(--anek);
+  padding: 0 0.8rem;
+}
+
+.input:focus {
+  outline: none;
+}
+
+#name {
+  margin-right: 1rem;
+}
