@@ -3,4 +3,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  margin: 3rem 0;
+}
+
+.skills_container {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.icon {
+  padding: 1rem;
+  display: flex;
+  color: white;
+  background-color: #222;
+  font-size: 4.5rem;
 }

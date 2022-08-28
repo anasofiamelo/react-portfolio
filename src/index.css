@@ -2,6 +2,7 @@ html {
   --light-blue: #c6ddf0;
   --light-coral: #c99da3;
   --purple: #8980f5;
+  --light-purple: #cb63ff;
   --black: #2a2b2a;
   --white: #f7f7f9;
   --anek: "Anek Malayalam";
@@ -37,8 +38,4 @@ ul {
   color: var(--white);
   opacity: 0.8;
   font-family: var(--anek);
-}
-
-.text-container {
-  width: 80%;
 }

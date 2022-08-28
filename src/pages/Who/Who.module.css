@@ -1,0 +1,20 @@
+.who_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.text_container {
+  /* background-color: #222; */
+  /* padding: 1rem 3rem; */
+  width: 60%;
+}
+
+.img_container img {
+  position: relative;
+  float: right;
+  border-radius: 50%;
+  width: 60%;
+  opacity: 0.8;
+}

@@ -2,9 +2,23 @@
   border: 3px solid var(--purple);
   color: var(--white);
   font-size: 1.5rem;
-  /* border-radius: 0.5rem; */
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 3rem;
   text-transform: uppercase;
   font-family: var(--anek);
   background-color: #222;
+  transition: color 1s linear;
+}
+
+.button:hover {
+  color: black;
+  /* animation: button 1s linear; */
+}
+
+@keyframes button {
+  0% {
+    background-color: var(--purple);
+  }
+  100% {
+    background-color: aliceblue;
+  }
 }

@@ -9,6 +9,7 @@
   -o-transform: skewX(-20deg);
   transform: skewX(-20deg);
   animation: componentTitle 1s 1 ease-in-out;
+  margin-bottom: 0;
 }
 
 .component,
@@ -24,6 +25,12 @@
   animation: fadeFromBottomIn 0.8s 1 ease-in-out;
 }
 
+.description {
+  font-family: var(--anek);
+  color: var(--white);
+  font-weight: 200;
+}
+
 .title_border_bottom {
 }
 
@@ -36,6 +43,7 @@
     bottom: 0rem;
   }
 }
+
 @keyframes componentTitle {
   0% {
     -webkit-transform: skewX(0deg);
