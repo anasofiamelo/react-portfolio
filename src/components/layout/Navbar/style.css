@@ -3,5 +3,6 @@
   font-size: 1.5rem;
   justify-content: space-around;
   padding: 2rem 0;
-  background: #222;
+  background: var(--dark-black);
+  border-bottom: 5px solid var(--black);
 }

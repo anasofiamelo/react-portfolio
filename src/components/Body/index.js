@@ -33,7 +33,7 @@ const Body = (props) => {
       </div>
       <div className={classes.body_container}>
         <Navbar onChangeComponent={changeComponentHandler} />
-        <ThemeSwitcher />
+        {/* <ThemeSwitcher /> */}
         <div className="container">{componentSelected}</div>
       </div>
       <Footer />

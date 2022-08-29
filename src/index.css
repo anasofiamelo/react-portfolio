@@ -1,18 +1,23 @@
 html {
-  --light-blue: #c6ddf0;
-  --light-coral: #c99da3;
-  --purple: #8980f5;
-  --light-purple: #cb63ff;
+  --light-blue: #00a8e8;
+  --blue: #007ea7;
+  --light-purple: #4056f4;
+  --purple: #470ff4;
+  --coral: #db7f67;
   --black: #2a2b2a;
-  --white: #f7f7f9;
+  --dark-black: #222;
+  --white: #f4f4f9;
   --anek: "Anek Malayalam";
 }
 
 body {
   margin: 0;
   box-sizing: border-box;
-  padding: 0;
   background: var(--black);
+}
+
+.App {
+  padding: 0 15%;
 }
 
 button {
@@ -38,4 +43,13 @@ ul {
   color: var(--white);
   opacity: 0.8;
   font-family: var(--anek);
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 62.5%;
+  }
+  .App {
+    padding: 0 10%;
+  }
 }

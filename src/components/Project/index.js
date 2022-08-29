@@ -1,22 +1,44 @@
 import classes from "./Project.module.css";
-import { BsArrowUpRight } from "react-icons/bs";
 
 function Project(props) {
-  console.log(classes);
+  const techs = props.used_tech.map((tech) => (
+    <p className={`text ${classes.tag}`}>{tech}</p>
+  ));
   return (
     <div className={classes.project_container}>
-      <h2 className="text"> {props.title} </h2>
+      <h2 className={`text ${classes.project_title}`}>
+        {props.title},{" "}
+        <span className={`text ${classes.creation_date}`}>
+          {props.creation_date}
+        </span>
+      </h2>
+      <div className={classes.technologies}>
+        <h4 className="text">Techs: </h4>
+        {techs}
+      </div>
       <p className={`text ${classes.project_description}`}>
         {props.description}
       </p>
-      <a
-        className={classes.project_code_link}
-        href={props.github_link}
-        target="_blank"
-        rel="noreferrer"
-      >
-        View code <BsArrowUpRight />
-      </a>
+
+      <div className={classes.actions}>
+        <a
+          className={classes.project_code_link}
+          href={props.github_link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          View code
+        </a>
+
+        <a
+          className={classes.project_code_link}
+          href={props.website_link}
+          target="_blank"
+          rel="noreferrer"
+        >
+          View WebSite
+        </a>
+      </div>
     </div>
   );
 }

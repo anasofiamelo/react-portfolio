@@ -5,8 +5,8 @@ function PageComponent(props) {
     <>
       <div key={props.title} className={classes.component}>
         <h1 className={classes.title}>{props.title}</h1>
-        <h3 className={classes.description}>{props.description}</h3>
         <div className={classes.title_border_bottom} />
+        <h3 className={classes.description}>{props.description}</h3>
         <div className={classes.children}>{props.children}</div>
       </div>
     </>

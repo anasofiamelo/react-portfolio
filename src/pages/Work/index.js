@@ -5,13 +5,12 @@ import { PageComponent, Project } from "../../components";
 
 import { FaReact, FaNodeJs, FaAngular, FaCss3, FaHtml5 } from "react-icons/fa";
 function Work() {
+  const mapped_projects = PROJECTS.map((project) => {
+    return <Project {...project} />;
+  });
   return (
     <PageComponent title="Work" description="My projects">
-      <div className={classes.projects_container}>
-        {PROJECTS.map((project) => {
-          return <Project {...project} />;
-        })}
-      </div>
+      <div className={classes.projects_container}>{mapped_projects}</div>
       <h2 className="text"> My skills</h2>
       <div className={classes.skills_container}>
         <div className={classes.icon}>

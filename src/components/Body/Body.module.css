@@ -1,5 +1,6 @@
 .body_container {
   min-height: 100vh;
+  background-color: var(--dark-black);
 }
 .actions_container {
   position: fixed;

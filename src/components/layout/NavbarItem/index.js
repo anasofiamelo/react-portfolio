@@ -24,7 +24,7 @@ function NavbarItem({ className, linkContent, execution }) {
         className="cursor"
         style={{ left: cursorX + "px", top: cursorY + "px" }}
       />
-      <a href={`#${linkContent}`} className="nav-link" onClick={execution}>
+      <a className="nav-link" onClick={execution}>
         {linkContent}
       </a>
     </li>

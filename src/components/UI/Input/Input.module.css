@@ -1,6 +1,6 @@
 .input {
   border: none;
-  background-color: #222;
+  background-color: var(--dark-black);
   color: var(--white);
   font-size: 1.1rem;
   width: 13rem;
