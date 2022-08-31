@@ -1,21 +1,20 @@
 import { Who, Contact, Work } from "../../../pages";
 import { NavbarItem } from "../../index";
-import { FaHome } from "react-icons/fa";
 
 import "./style.css";
 
 function Navbar(props) {
   return (
-    <div>
-      <nav>
+    <>
+      <nav className="nav-container">
         <ul className="nav-container">
+          <NavbarItem
+            linkContent={"intro"}
+            execution={() => props.onChangeComponent(<Who />)}
+          />
           <NavbarItem
             linkContent="work"
             execution={() => props.onChangeComponent(<Work />)}
-          />
-          <NavbarItem
-            linkContent={<FaHome />}
-            execution={() => props.onChangeComponent(<Who />)}
           />
           <NavbarItem
             linkContent="contact"
@@ -23,7 +22,7 @@ function Navbar(props) {
           />
         </ul>
       </nav>
-    </div>
+    </>
   );
 }
 

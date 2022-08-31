@@ -16,9 +16,7 @@ function Project(props) {
         <h4 className="text">Techs: </h4>
         {techs}
       </div>
-      <p className={`text ${classes.project_description}`}>
-        {props.description}
-      </p>
+      <p className="text">{props.description}</p>
 
       <div className={classes.actions}>
         <a
@@ -31,7 +29,7 @@ function Project(props) {
         </a>
 
         <a
-          className={classes.project_code_link}
+          className={`${classes.project_code_link} ${classes.website_link}`}
           href={props.website_link}
           target="_blank"
           rel="noreferrer"

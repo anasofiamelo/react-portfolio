@@ -1,13 +1,10 @@
 .projects_container {
-  width: 75%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin: 3rem 0;
 }
 
 .skills_container {
-  margin: 3rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

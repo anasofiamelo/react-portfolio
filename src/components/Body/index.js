@@ -1,10 +1,7 @@
 import { useState } from "react";
 import { Navbar, Footer } from "../index";
-import { ThemeSwitcher } from "../UI";
 import { Who } from "../../pages";
 import classes from "./Body.module.css";
-
-import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Body = (props) => {
   const [componentSelected, setComponentSelected] = useState(<Who />);
@@ -15,7 +12,7 @@ const Body = (props) => {
 
   return (
     <>
-      <div className={classes.actions_container}>
+      {/* <div className={classes.actions_container}>
         <div className={classes.actions}>
           <BsGithub
             style={{
@@ -30,13 +27,14 @@ const Body = (props) => {
             }}
           />
         </div>
-      </div>
+      </div> */}
       <div className={classes.body_container}>
         <Navbar onChangeComponent={changeComponentHandler} />
-        {/* <ThemeSwitcher /> */}
-        <div className="container">{componentSelected}</div>
+        <div className={classes.main_content}>
+          <div>{componentSelected}</div>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 };

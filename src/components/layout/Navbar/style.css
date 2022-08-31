@@ -1,8 +1,8 @@
+nav {
+  background-color: var(--black);
+  padding: 2rem 15%;
+}
 .nav-container {
   display: flex;
   font-size: 1.5rem;
-  justify-content: space-around;
-  padding: 2rem 0;
-  background: var(--dark-black);
-  border-bottom: 5px solid var(--black);
 }

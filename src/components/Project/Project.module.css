@@ -5,16 +5,20 @@
   flex-direction: column;
   justify-content: space-between;
   border-radius: 3px;
+  min-width: 433px;
 }
 
 .project_code_link {
-  font-style: italic;
   font-weight: 400;
   margin-right: 1rem;
-  background-color: var(--dark-black);
+  background-color: var(--purple);
   color: var(--white);
   border: 2px solid var(--light-purple);
-  padding: 0.3rem 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.website_link {
+  background-color: var(--dark-black);
 }
 
 .project_title {
@@ -34,7 +38,6 @@
 
 .technologies {
   display: flex;
-  align-items: center;
 }
 
 .technologies * {

@@ -1,6 +1,10 @@
 .body_container {
-  min-height: 100vh;
+  top: 0;
   background-color: var(--dark-black);
+}
+.main_content {
+  min-height: 100vh;
+  padding: 0 15%;
 }
 .actions_container {
   position: fixed;

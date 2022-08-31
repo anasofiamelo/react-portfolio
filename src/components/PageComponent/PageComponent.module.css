@@ -10,13 +10,7 @@
   transform: skewX(-20deg);
   animation: componentTitle 1s 1 ease-in-out;
   margin-bottom: 0;
-}
-
-.component,
-.children {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: fit-content;
 }
 
 .children,
